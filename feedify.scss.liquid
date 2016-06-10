@@ -1,0 +1,162 @@
+// General app styles
+
+.feedify {
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.feedify_title {
+  padding-left: 10px;
+}
+
+.feedify_grid {
+  {% if settings.instagram_3 %}
+  width: 33%;
+  {% else %}
+  width: 25%;
+  {% endif %}
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+.feedify_img {
+  {% if settings.instagram_3 %}
+  width: 300px;
+  {% else %}
+  width: 220px;
+  {% endif %}
+}
+
+// Caption hover card
+
+.feedify_caption {
+  {% if settings.instagram_3 %}
+  width: 300px;
+  {% else %}
+  width: 220px;
+  {% endif %}
+  height: 98%;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  top: 0px;
+
+  &:hover {
+    opacity: 0.7;
+    background-color: #000;
+  }
+}
+
+
+.feedify_caption-inner {
+  position: relative;
+  top: 25px;
+  margin: 10px auto;
+  color: #fff;
+  vertical-align: middle;
+}
+
+// Preset 1
+
+.preset_1 {
+  border: 3px solid rgba(102,102,102, 0.4);
+  border-radius: 7px;
+  background-color: rgba(102,102,102, 0.1);
+}
+
+.preset_1 h2 {
+  text-align: center;
+  position: relative;
+  top: -15px;
+  margin-bottom: 2px;
+}
+
+.preset_1 h2 a {
+  border: 3px solid rgba(102,102,102, 0.4);
+  border-radius: 7px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+// Preset 2
+
+.preset_2 {
+  background-color: rgba(237,237,237, 1);
+}
+
+.preset_2 h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.preset_2 h2 a {
+  padding-left: 3%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.preset_2 .feedify_grid {
+  border: 1px solid #bbb;
+  padding: 5px 10px;
+  margin: 0px 10px 5px 10px;
+  background-color: rgba(255,255,255, 1);
+  {% if settings.instagram_3 %}
+  width: 30%;
+  {% else %}
+  width: 22%;
+  {% endif %}
+}
+
+.preset_2 .feedify_img {
+  {% if settings.instagram_3 %}
+  width: 280px;
+  {% else %}
+  width: 200px;
+  {% endif %}
+}
+
+.preset_2 .feedify_caption {
+  {% if settings.instagram_3 %}
+  width: 280px;
+  {% else %}
+  width: 200px;
+  {% endif %}
+  left: 3px;
+}
+
+.preset_2 .grid {
+  margin-left: 2%;
+}
+
+// Preset 3
+
+.preset_3 {
+  background-color: rgba(255,255,255, 0.3);
+}
+
+
+.preset_2 h2 a {
+   padding-left: 10px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Preset 4
+
+.preset_4 h2 {
+  text-align: center;
+  border-bottom: 2px solid {{ settings.instagram_header_text }};
+}
+
+
+.feedify_title a {
+  color: {{ settings.instagram_header_text }};
+  font-family: {{ settings.instagram_header_font }};
+  font-size: {{ settings.instagram_header_size }};
+}

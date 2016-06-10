@@ -1,0 +1,26 @@
+<div class="grid__item">
+  <section class="{{ settings.feedify_preset }}">
+
+    {% assign url = '{{image}}' %}
+    {% assign caption = '{{caption}}' %}
+
+      <div id="instagram-card" class="clearfix">
+        <h2 class="feedify_title"><a href="http://instagram.com/{{ settings.instagram_name }}" target="_blank">{{ settings.instagram_widget_title }} {% if settings.show_instagram_name %}@{{ settings.instagram_name }} on Instagram{% endif %}</h2></a>
+        <div id="instafeed" class="grid feedify"></div>
+        <script type="text/javascript">
+          var feedify = new Instafeed({
+            get: 'user',
+            userId: {{ settings.instagram-user-id }},
+            accessToken: '{{ settings.instagram-access-token }}',
+            limit: {{ settings.instagram_limit }},
+            resolution: 'low_resolution',
+            template: '<div class="grid__item feedify_grid"><a href="http://instagram.com/{{ settings.instagram_name }}" rel="ig" target="_blank"><img class="feedify_img" src="{{ url }}" id="feedify_img" /><br/><span class="feedify_caption"><span class="feedify_caption-inner">{{caption}}</span></span></a></div>'
+          });
+          feedify.run();
+
+
+        </script>
+      </div>
+
+  </section>
+</div>

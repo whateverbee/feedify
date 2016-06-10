@@ -41,7 +41,7 @@ Open the storefront editor, and head to the Instagram widget section.
 [![alt](https://screenshot.click/10-41-i91lq-rz65y.png)](https://screenshot.click/10-41-i91lq-rz65y.png)
 
 When you generate an access token, it will come in the format `123456789.1234ab5.123qwe456rty789uio0132w5475fy712`; this entire string is the access token; additionally, the first 9 digits (everything before the first . ) is the user id. 
-[![alt](348559287.1677ed0.b281428a19854f20bc331413c326d34a)](348559287.1677ed0.b281428a19854f20bc331413c326d34a)
+[![alt](https://screenshot.click/10-42-hh9xs-5a2ep.png)](https://screenshot.click/10-42-hh9xs-5a2ep.png)
 
 You will require both for this to function.
 
